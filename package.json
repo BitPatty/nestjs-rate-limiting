@@ -1,0 +1,46 @@
+{
+  "name": "nestjs-rate-limiting",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Matteias Collet",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "7.4.4",
+    "@nestjs/core": "7.4.4",
+    "@nestjs/platform-express": "7.4.4",
+    "mongodb": "^3.6.4",
+    "nestjs-rate-limiter": "^2.7.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "7.5.1",
+    "eslint": "7.12.1",
+    "eslint-config-prettier": "7.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "prettier": "2.2.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "9.1.1",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "4.1.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
